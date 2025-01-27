@@ -1,6 +1,6 @@
-image = load_image('lean (1).jpg')
+image = load_image(file_path)
 clean_image = median(arr_image, ball(3))
-edge_detection(image)
+edge_detection(clean_image)
 
 threshold = 90
 binary_image = edged_image > threshold
