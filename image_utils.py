@@ -11,7 +11,7 @@ def load_image(path):
     return arr_image
 
 def edge_detection(image):
-    clean_image = median(edged_image, ball(3))
+    clean_image = median(edged_image, ball(6))
     grayscale_image = np.mean(clean_image, axis=2)
     kernelY = np.array([[1, 2, 1], [0, 0, 0], [-1, -2, -1]])
     kernelX = np.array([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]])
