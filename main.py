@@ -1,4 +1,4 @@
-threshold = 120
+threshold = 140
 binary_image = edged_image > threshold
 binary_image = binary_image.astype(np.uint8) * 255
 edge_image = Image.fromarray(binary_image)
